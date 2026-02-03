@@ -1,0 +1,9 @@
+language,perturbation,pipeline,cosine_similarity,num_comparison
+es,synonym,vanilla,0.8231381965638578,1696
+es,word_order,vanilla,0.8338288039227493,1672
+es,spelling,vanilla,0.8454272675033316,1729
+es,expansion_noimpact,vanilla,0.8110851361606967,1685
+es,intensifier,vanilla,0.8224023904465818,1646
+es,expansion_impact,vanilla,0.7981453020243531,1643
+es,omission,vanilla,0.7964147947075094,1616
+es,alteration,vanilla,0.7818628028533551,1551
