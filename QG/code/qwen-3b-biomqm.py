@@ -59,8 +59,11 @@ def main():
                 processed.add(key)
         print(f"Resuming: {len(processed)} entries already processed")
 
+    total_lines = 5216  # Total rows in dev_with_backtranslation.jsonl
+    
     with open(input_file, 'r', encoding='utf-8') as f_in, open(output_path, 'a', encoding='utf-8') as f_out:
-        for line in f_in:
+        for idx, line in enumerate(f_in, 1):
+            print(f"Processing src {idx}/{total_lines}")
             data = json.loads(line)
             
             key = f"{data.get('src', '')}_{data.get('lang_tgt', '')}"
